@@ -1,0 +1,14 @@
+streamlit
+transformers>=5.0
+Pillow
+opencv-python
+numpy
+# mediapipe 0.10.21 requires protobuf>=4.25.3,<5.
+# mediapipe >= 0.10.30 dropped mp.solutions (the legacy API used here).
+# Streamlit's declared minimum is protobuf>=5.26.1 but it works with 4.25.x at runtime.
+mediapipe==0.10.21
+protobuf>=4.25.3,<5
+reportlab
+exifread
+accelerate
+safetensors
